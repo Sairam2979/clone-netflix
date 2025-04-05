@@ -3,7 +3,7 @@ body
     margin: 0;
 }
 .Main{
-    height: 800px;
+    padding-bottom: 20px;
     background: linear-gradient(to bottom, #000000f3 15%, #ff0000ed 40%, #000000 90%);
 }
 header
@@ -31,7 +31,7 @@ header a
     padding: 0 10px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    font-size: 13px;
+    font-size: 100%;
     font-weight:bolder;
 }
 header .top  .sign
@@ -96,11 +96,11 @@ header .language
 .intro p{
     margin: 2px;
     font-size: large;
+    text-align: center;
 }
 .intro .started
 {
-    display: flex;
-    justify-content:space-around;
+
     padding: 10px 0;
     width: 40%;
     
@@ -108,7 +108,7 @@ header .language
 .started input
 {
     width: 50%;
-    padding: 15px;
+    padding: 2%;
     border-radius: 30px;
     border: 0;
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -118,10 +118,11 @@ header .language
     
 }
 .started button{
-    padding: 15px;
+    padding: 2%;
     width: 40%;
     border-radius: 30px;
     border: 0;
+    cursor: pointer;
     font-size: 130%;
     font-weight: bold;
     background-color: red;
@@ -129,4 +130,114 @@ header .language
 }
 input::placeholder {
     color: rgb(196, 192, 192);
-  }
+}
+.trending
+{
+    margin: 1% 5%;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+.trending h1{
+    font-size: 2rem;
+    color: white;
+}
+.trending .photos
+{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.photos img
+{
+    width: 150px;
+    height: 250px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.photos img:hover
+{
+    transform: scale(1.06);
+}
+.trending .photos i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.reasons
+{
+    margin: 1% 5%;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.reasons h1{
+    font-size: 2rem;
+    color: white;
+}
+.reasons .list
+{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+.list .content 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    border: 2px solid white;
+    padding: 20px 20px ;
+    border-radius: 10px;
+    background-color: #46424260;
+}
+.list .content h3{
+    margin: 0;
+}
+.list .content i{
+    float: right;
+    padding: 50px 0 0 0;
+    font-size: 25px;
+    color: palevioletred;
+    
+}
+.list .content .two
+{
+    display: flex;
+}
+.bottom
+{
+    background-color: #000000;
+}
+.questions
+{
+    margin: 0 8%;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.questions h1{
+    font-size: 2rem;
+    color: white;
+    margin: 0 0 20px 0;
+}
+.answer
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+.answer .ques{
+    margin-left: 3%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    border-radius: 15px;
+    padding: 25px 20px;
+    background-color: #333333bb;
+}
+.answer .ques h3{
+    margin: 0;
+    font-weight:600;
+}
+.answer .ques i{
+    font-size: 20px;
+}
