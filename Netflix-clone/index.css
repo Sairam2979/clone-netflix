@@ -21,7 +21,6 @@ header h1{
 }
 header .top
 {
-    /* padding: 0 40px; */
     display: flex;
 
 }
@@ -56,7 +55,6 @@ header .language
     border-radius: 20px;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.805);
-
 }
 header .language a{
     color: white;
@@ -246,7 +244,6 @@ input::placeholder {
     color: white;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 20px 0;
@@ -328,3 +325,80 @@ input::placeholder {
 {
     font-size: 15px;
 }
+@media screen and (max-width: 600px) {
+    header h1
+    {
+        font-weight: 400;
+    }
+    header a
+    {
+        padding: 0 5px;
+    }
+    .intro .started,.log
+    {
+    
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 60%;
+    }
+    .started input,.log input
+    {
+        width: 100%;
+        font-size: 100%;
+        padding: 10px;
+    }
+    .started button,.log button
+    {
+        width: 110%;
+        font-size: 100%;
+        padding: 10px;
+    }
+    .trending .photos
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+    .photos img
+    {
+        width: 120px;
+        height: 200px;
+    }
+    .reasons .list
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .list .content
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .list .content i
+    {
+        padding: 0;
+        float: right;
+    }
+    .questions
+    {
+    margin: 0 4%;
+    }
+    .answer .ques
+    {
+        width: 85%;
+    }
+    .footer .list2
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2px;
+    }
+    .footer
+    {
+        padding-bottom: 20%;
+    }
+  }
+  
