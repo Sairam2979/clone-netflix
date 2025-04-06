@@ -241,3 +241,90 @@ input::placeholder {
 .answer .ques i{
     font-size: 20px;
 }
+.login
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px 0;
+}
+.login p{
+    margin: 2px;
+    font-size:medium;
+    text-align: center;
+}
+.log input{
+    width: 50%;
+    padding: 2%;
+    border-radius: 30px;
+    border: 0;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 110%;
+    background-color: rgba(120, 116, 116, 0.642);
+    color: white;
+}
+.log button{
+    padding: 2%;
+    width: 40%;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    font-size: 130%;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+}
+.login .log{
+    width: 40%;
+    padding: 10px 0;
+}
+.footer
+{
+    margin: 0 8%;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding: 1% 0 8% 0;
+}
+.footer p{
+    margin: 0;
+}
+.footer .list2
+{
+    display: flex;
+    gap:10%;
+}
+.list2 li{
+    list-style: none;
+    margin: 10px 0;
+    font-size:15px;
+}
+.list2 li a{
+    color: rgb(172, 156, 156);
+}
+
+.footer .lan
+{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.805);
+    width: fit-content;
+    margin: 10px 0 20px 0;
+
+}
+.footer .lan a{
+    color: white;
+    text-decoration: none;
+    padding:8px ;
+}
+.footer .lan
+{
+    font-size: 15px;
+}
