@@ -74,7 +74,7 @@ header .language
     margin-left: 2.5%;
     border-radius: 20px;
     background-image: url('banner.jpg');
-    box-shadow: inset 0 0 500px 500px rgba(22, 21, 21, 0.837);
+    box-shadow: inset 0 500px 500px 500px rgba(22, 21, 21, 0.83);
     color: white;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -83,8 +83,8 @@ header .language
     text-align: center;
     padding-top: 7%;
     color: white;
-    font-weight: bold;
-    font-size: 380%;
+    font-weight:900;
+    font-size: 350%;
 }
 .intro .price
 {
@@ -224,15 +224,37 @@ input::placeholder {
     color: white;
 }
 .answer .ques{
-    margin-left: 3%;
+    margin-left: 1%;
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    border-radius: 15px;
+    width: 94%;
+    border-radius: 12px;
     padding: 25px 20px;
     background-color: #333333bb;
 }
+.answer .ques:hover
+{
+    background-color: #595454bb;
+}
+.answers
+{
+    background-color: #333333bb;
+    width: 94%;
+    margin-left: 1%;
+    border-radius: 15px;
+    padding: 20px 20px;
+    display: none;
+}
+.answer #ans-1 h4
+{
+    font-weight:400;
+}
+
 .answer .ques h3{
+    margin: 0;
+    font-weight:600;
+}
+.answers h3{
     margin: 0;
     font-weight:600;
 }
@@ -324,6 +346,9 @@ input::placeholder {
 .footer .lan
 {
     font-size: 15px;
+}
+.fa-plus{
+    cursor: pointer;
 }
 @media screen and (max-width: 600px) {
     header h1
